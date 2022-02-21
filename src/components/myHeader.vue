@@ -5,10 +5,14 @@
             <a href="#"><img src="../assets/img/dc-logo.png" alt=""></a>
 
             <ul>
+                <li v-for="(link, index) in links" :key="index">
+                    <a href="#">{{link.linkName}}</a>
+                </li>
+                <!--
                 <li><a href="#">CHARACTERS</a></li>
                 <li><a href="#">CHARACTERS</a></li>
                 <li><a href="#">CHARACTERS</a></li>
-                <li><a href="#">CHARACTERS</a></li>
+                -->
             </ul>
         </div>
     </header>
@@ -17,7 +21,44 @@
 
 <script>
 export default {
-    
+    name: 'myHeader',
+
+    data(){
+        return{
+            links: [
+                {
+                    linkName: 'CHARACTERS'
+                },
+                {
+                    linkName: 'COMICS'
+                },
+                {
+                    linkName: 'MOVIES'
+                },
+                {
+                    linkName: 'TV'
+                },
+                {
+                    linkName: 'GAMES'
+                },
+                {
+                    linkName: 'COLLECTIBLES'
+                },
+                {
+                    linkName: 'VIDEOS'
+                },
+                {
+                    linkName: 'FANS'
+                },
+                {
+                    linkName: 'NEWS'
+                },
+                {
+                    linkName: 'SHOP'
+                }
+            ]
+        }
+    }
 }
 </script>
 
