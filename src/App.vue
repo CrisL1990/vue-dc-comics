@@ -3,7 +3,9 @@
 
     <myHeader />
     <myMain />
-    <myFooter />
+    <myFooterTop />
+    <myFooterCenter />
+    <myFooterBottom />
  
   </div>
 </template>
@@ -11,14 +13,19 @@
 <script>
 import myHeader from './components/myHeader.vue';
 import myMain from './components/myMain.vue';
-import myFooter from './components/myFooter.vue';
+import myFooterTop from './components/myFooterTop.vue';
+import myFooterCenter from './components/myFooterCenter.vue';
+import myFooterBottom from './components/myFooterBottom.vue';
 
 export default {
   name: 'App',
   components: {
     myHeader,
     myMain,
-    myFooter
+    myFooterTop,
+    myFooterCenter,
+    myFooterBottom
+
   }
 }
 </script>
