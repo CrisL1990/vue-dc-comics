@@ -8,11 +8,6 @@
                 <li v-for="(link, index) in links" :key="index">
                     <a href="#">{{link.linkName}}</a>
                 </li>
-                <!--
-                <li><a href="#">CHARACTERS</a></li>
-                <li><a href="#">CHARACTERS</a></li>
-                <li><a href="#">CHARACTERS</a></li>
-                -->
             </ul>
         </div>
     </header>
