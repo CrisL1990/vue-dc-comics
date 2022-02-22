@@ -6,7 +6,7 @@
             <section id="footer-top">
 
                 <div v-for="(item, index) in items" :key="index" class="box">
-                    <a href="#"><img :src="'../assets/img/' + item.logo" alt=""></a>
+                    <a href="#"><img :src="item.logo" alt="#"></a>
                     <span>{{item.text}}</span>
                 </div>
 
@@ -48,23 +48,23 @@ export default {
             items:[
 
                 {
-                    logo: "buy-comics-digital-comics.png",
+                    logo:require("../assets/img/buy-comics-digital-comics.png"),
                     text:"DIGITAL COMICS"
                 },
                 {
-                    logo: "buy-comics-merchandise.png",
+                    logo:require("../assets/img/buy-comics-merchandise.png"),
                     text:"DC MERCHANDISE"
                 },
                 {
-                    logo: "buy-comics-subscriptions.png",
+                    logo:require("../assets/img/buy-comics-subscriptions.png"),
                     text:"SUBSCROPTION"
                 },
                 {
-                    logo: "buy-comics-shop-locator.png",
+                    logo:require("../assets/img/buy-comics-shop-locator.png"),
                     text:"COMIC SHOP LOCATOR"
                 },
                 {
-                    logo: "buy-dc-power-visa.svg",
+                    logo:require("../assets/img/buy-dc-power-visa.svg"),
                     text:"DC POWER VISA"
                 }
             ]

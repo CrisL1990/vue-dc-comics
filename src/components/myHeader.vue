@@ -60,7 +60,7 @@ export default {
 <style scoped lang="scss">
     
     header{
-
+       
         .container{
             padding: 15px 0;
             display: flex;
@@ -72,11 +72,12 @@ export default {
             display: flex;
             list-style: none;
             align-items: center;
+            height: 100%;
             
 
             li{
                 line-height: 100%;
-
+                
                 a{
                 text-decoration: none;
                 padding: 20px;
