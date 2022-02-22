@@ -2,6 +2,7 @@
   <div id="app">
 
     <myHeader />
+    <myJumbotron />
     <myMain />
     <myFooterTop />
     <myFooterCenter />
@@ -16,6 +17,7 @@ import myMain from './components/myMain.vue';
 import myFooterTop from './components/myFooterTop.vue';
 import myFooterCenter from './components/myFooterCenter.vue';
 import myFooterBottom from './components/myFooterBottom.vue';
+import myJumbotron from './components/myJumbotron.vue';
 
 export default {
   name: 'App',
@@ -24,7 +26,8 @@ export default {
     myMain,
     myFooterTop,
     myFooterCenter,
-    myFooterBottom
+    myFooterBottom,
+    myJumbotron
 
   }
 }

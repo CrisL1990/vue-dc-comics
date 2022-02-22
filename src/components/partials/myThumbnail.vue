@@ -14,7 +14,10 @@
 <script>
 export default {
    name: "myThumbnail",
-   props: ["thumb", "series"],
+   props: {
+        thumb: String, 
+        series: String
+    }
 
 }
 </script>
