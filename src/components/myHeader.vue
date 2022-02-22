@@ -58,7 +58,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    
+    @import "../assets/style/colors.scss";
     header{
        
         .container{
@@ -85,15 +85,15 @@ export default {
                 a{
                 text-decoration: none;
                 padding: 20px;
-                color: black;
+                color: $textBlack;
                 line-height: 100%;
                 height: 130px;
                 display: flex;
                 align-items: center;
 
                 &:hover{
-                    border-bottom: solid rgb(3, 130, 249) 5px;
-                    color: rgb(3, 130, 249);
+                    border-bottom: solid $myblue 5px;
+                    color: $myblue;
                 }
                 }
             }

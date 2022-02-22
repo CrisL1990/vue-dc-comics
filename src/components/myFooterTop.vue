@@ -65,10 +65,12 @@ export default {
 
 <style scoped lang="scss">
 
+    @import "../assets/style/colors.scss";
+
     footer{
         display: flex;
         min-height: 100px;
-        background-color: rgb(3, 130, 249);
+        background-color: $myblue;
 
         .container{
 

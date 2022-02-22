@@ -17,6 +17,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+    @import "../../assets/style/colors.scss";
     .box{
         height: 150px;
         width: calc(100% / 5);
@@ -41,7 +42,7 @@ export default {
             }
         }
         span{
-            color: white;
+            color: $textWhite;
         }
     }
 </style>

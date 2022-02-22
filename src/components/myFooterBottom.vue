@@ -39,10 +39,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+    @import "../assets/style/colors.scss";
     .footer-bottom{
         height: 150px;
-        background-color: rgb(48, 48, 48);
+        background-color: $bgGrayLighter;
 
         .container{
 
@@ -65,8 +65,8 @@ export default {
             button{
                 padding: 15px;
                 background-color: transparent;
-                border: solid rgb(3, 130, 249) 3px;
-                color: white;
+                border: solid $myblue 3px;
+                color: $textWhite;
             }
 
             .right-box{
@@ -74,7 +74,7 @@ export default {
 
                 #follow{
                     padding: 0 10px;
-                    color: rgb(3, 130, 249);
+                    color: $myblue;
                     font-weight: 600;
                     font-size: 18px;
                 }

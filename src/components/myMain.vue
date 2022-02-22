@@ -116,9 +116,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+    @import "../assets/style/colors.scss";
+
     main{
         min-height: 100px;
-        background-color: rgb(28, 28, 28);
+        background-color: $bgGray;
         display: flex;
 
         .container{

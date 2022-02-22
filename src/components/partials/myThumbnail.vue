@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+    @import "../../assets/style/colors.scss";
 
     .thumb{
         display: flex;
@@ -42,7 +42,7 @@ export default {
         }
 
         span{
-            color: white;
+            color: $textWhite;
             position: absolute;
             top: 220px;
             display: inline-block;

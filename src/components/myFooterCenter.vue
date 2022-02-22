@@ -80,7 +80,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+    @import "../assets/style/colors.scss";
     .footer-center{
         background-image: url('../assets/img/footer-bg.jpg');
         height: 450px;
@@ -112,7 +112,7 @@ export default {
                 width: calc(80% / 3);
 
                 h1{
-                    color: white;
+                    color: $textWhite;
                     padding: 20px 0;
                 }
 
