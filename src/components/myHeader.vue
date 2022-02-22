@@ -62,7 +62,6 @@ export default {
     header{
        
         .container{
-            padding: 15px 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -72,17 +71,30 @@ export default {
             display: flex;
             list-style: none;
             align-items: center;
-            height: 100%;
+            height: 130px;
             
 
             li{
                 line-height: 100%;
+                height: 130px;
+                display: flex;
+                align-items: center;
+                
+                
                 
                 a{
                 text-decoration: none;
                 padding: 20px;
                 color: black;
                 line-height: 100%;
+                height: 130px;
+                display: flex;
+                align-items: center;
+
+                &:hover{
+                    border-bottom: solid rgb(3, 130, 249) 5px;
+                    color: rgb(3, 130, 249);
+                }
                 }
             }
             
