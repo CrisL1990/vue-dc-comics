@@ -5,28 +5,13 @@
 
             <section id="footer-top">
 
-                <div v-for="(item, index) in items" :key="index" class="box">
-                    <a href="#"><img :src="item.logo" alt="#"></a>
-                    <span>{{item.text}}</span>
-                </div>
+                <myFooterCard 
+                v-for="(item, index) in items" 
+                :logo="item.logo" :text="item.text" 
+                :key="index">
+                </myFooterCard>
 
                 <!--
-                <div class="box">
-                    <a href="#"><img src="../assets/img/buy-comics-digital-comics.png" alt="DC logo footer"></a>
-                    <span>DIGITAL COMICS</span>
-                </div>
-                <div class="box">
-                    <a href="#"><img src="../assets/img/buy-comics-merchandise.png" alt="DC logo footer"></a>
-                    <span>DC MERCHANDISE</span>
-                </div>
-                <div class="box">
-                    <a href="#"><img src="../assets/img/buy-comics-subscriptions.png" alt="DC logo footer"></a>
-                    <span>SUBSCROPTION</span>
-                </div>
-                <div class="box">
-                    <a href="#"><img src="../assets/img/buy-comics-shop-locator.png" alt="DC logo footer"></a>
-                    <span>COMIC SHOP LOCATOR</span>
-                </div>
                 <div class="box">
                     <a href="#"><img id="visa" src="../assets/img/buy-dc-power-visa.svg" alt="DC logo footer"></a>
                     <span>DC POWER VISA</span>
@@ -39,8 +24,13 @@
 </template>
 
 <script>
+
+import myFooterCard from './partials/myFooterCard.vue'
 export default {
     name: 'myFooterTop',
+    components:{
+        myFooterCard
+    },
 
     data(){
         return{
@@ -84,29 +74,6 @@ export default {
 
             #footer-top{
                 display: flex;
-
-                .box{
-                    height: 150px;
-                    width: calc(100% / 5);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    a{
-                        text-align: center;
-                        #visa{
-                            width: 75px;
-                            margin-right: 20px;
-                        }
-                        img{
-                            width: 50%;
-                            height: 50%;
-                        }
-                    }
-                    span{
-                        color: white;
-                    }
-                }
             }
         }
     }

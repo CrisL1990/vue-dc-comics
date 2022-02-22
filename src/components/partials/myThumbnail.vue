@@ -45,6 +45,8 @@ export default {
             color: white;
             position: absolute;
             top: 220px;
+            display: inline-block;
+            max-width: 90%;
         }
     }
 </style>
