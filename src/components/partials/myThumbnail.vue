@@ -3,9 +3,9 @@
   
     <div class="thumb">
         <div class="img-cont">
-            <img :src="items.thumb" alt="#">
+            <img :src="thumb" alt="#">
         </div>
-        <span>{{items.series}}</span>
+        <span>{{series}}</span>
     </div>
 
   
