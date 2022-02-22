@@ -1,6 +1,6 @@
 <template>
     <div class="box">
-        <a href="#"><img :src="logo" alt="#"></a>
+        <a href="#"><img :id="(text == 'DC POWER VISA') ? 'visa' : '' " :src="logo" alt="#"></a>
         <span>{{text}}</span>
     </div>
   
@@ -33,6 +33,11 @@ export default {
             img{
                 width: 50%;
                 height: 50%;
+
+                #visa{
+                width: 50%;
+                height: 50%;
+            }
             }
         }
         span{
