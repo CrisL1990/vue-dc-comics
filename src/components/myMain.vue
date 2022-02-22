@@ -6,6 +6,7 @@
                 v-for="(item, index) in items" :key="index"
                 :thumb="item.thumb" :series="item.series">
             </myThumbnail>
+            <myButton></myButton>
             <!--
             <div class="thumb">
                 <div class="img-cont">
@@ -21,12 +22,14 @@
 <script>
 
 import myThumbnail from './partials/myThumbnail.vue'
+import myButton from './partials/myButton.vue'
 
 export default {
     
     name: 'myMain',
     components:{
-        myThumbnail
+        myThumbnail,
+        myButton
     },
     data(){
 
@@ -115,7 +118,7 @@ export default {
 <style scoped lang="scss">
     main{
         min-height: 100px;
-        background-color: black;
+        background-color: rgb(28, 28, 28);
         display: flex;
 
         .container{
